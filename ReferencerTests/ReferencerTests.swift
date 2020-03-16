@@ -21,23 +21,23 @@ class ReferencerTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testTitle() {
-        let myMovie = Movie(title: title,director: director,yearProduced:yearProduced)
-        XCTAssertEqual(myMovie.title,title)
-
-    }
-    
-    func testDirector() {
-           let myMovie = Movie(title: title,director: director,yearProduced:yearProduced)
-           XCTAssertEqual(myMovie.director,director)
-       }
-    func testYear() {
-           let myMovie = Movie(title: title,director: director,yearProduced:yearProduced)
-           XCTAssertEqual(myMovie.yearProduced,yearProduced)
-       }
-  
-    
-
+//
+//    func testTitle() {
+//        let myMovie = Movie(title: title,director: director,yearProduced:yearProduced)
+//        XCTAssertEqual(myMovie.title,title)
+//
+//    }
+//    
+//    func testDirector() {
+//           let myMovie = Movie(title: title,director: director,yearProduced:yearProduced)
+//           XCTAssertEqual(myMovie.director,director)
+//       }
+//    func testYear() {
+//           let myMovie = Movie(title: title,director: director,yearProduced:yearProduced)
+//           XCTAssertEqual(myMovie.yearProduced,yearProduced)
+//       }
+//  
+//    
+//
 
 }

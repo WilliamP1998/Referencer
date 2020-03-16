@@ -6,10 +6,14 @@
 //  Copyright © 2020 Quang Minh Pham. All rights reserved.
 //
 
-import Foundation
-struct Movie {
+import SwiftUI
+import CoreLocation
+
+struct Movie: Hashable, Codable {
     var title: String
     var director: String
     var yearProduced: Int
+    var imageName:String
+
 }
 
