@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
-let movieData: [Movie] = [Movie(title: "Joker", director: "Todd Phillip", yearProduced: 2019, imageName: "Joker"),Movie(title: "Sherlock Holmes", director: "Guy Ritchy", yearProduced: 2005, imageName: "Sherlock"),Movie(title: "Parasite", director: "Gisaengchung", yearProduced: 2019, imageName: "Parasite")]
+    let movieData: [Movie] = [Movie(id:1,title: "Joker", director: "Todd Phillip", yearProduced: 2019, imageName: "Joker"),Movie(id:2, title: "Sherlock Holmes", director: "Guy Ritchy", yearProduced: 2005, imageName: "Sherlock"),Movie(id:3, title: "Parasite", director: "Gisaengchung", yearProduced: 2019, imageName: "Parasite")]
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

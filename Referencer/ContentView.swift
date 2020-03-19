@@ -49,6 +49,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(movie: Movie(title: "Title", director: "Director", yearProduced: 2000, imageName: "Joker"))
+        ContentView(movie: Movie(id:1,title: "Title", director: "Director", yearProduced: 2000, imageName: "Joker"))
     }
 }

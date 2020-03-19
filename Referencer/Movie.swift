@@ -1,5 +1,5 @@
 //
-//  Component.swift
+//  Movie.swift
 //  Referencer
 //
 //  Created by Quang Minh Pham on 10/3/20.
@@ -10,10 +10,10 @@ import SwiftUI
 import CoreLocation
 
 struct Movie: Hashable, Codable {
+    var id: Int
     var title: String
     var director: String
     var yearProduced: Int
     var imageName:String
-
 }
 

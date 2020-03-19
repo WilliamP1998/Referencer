@@ -12,14 +12,15 @@ import SwiftUI
 
 struct MovieList: View {
     var movieList: [Movie]
-
     var body: some View {
-        Text("Hello World")
-    }
+        List(movieList ,id:\.id){movie in
+            MovieRow(movie: movie)
+        }    }
+    
 }
 
 struct MovieList_Previews: PreviewProvider {
     static var previews: some View {
-        MovieList(movieList: [])
+        MovieList(movieList: [Movie(id:1,title: "Joker", director: "Todd Phillip", yearProduced: 2019, imageName: "Joker"),Movie(id:2,title: "Sherlock", director: "Todd ", yearProduced: 2019, imageName: "Sherlock")])
     }
 }
