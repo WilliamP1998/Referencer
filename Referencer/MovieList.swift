@@ -15,7 +15,7 @@ struct MovieList: View {
     var body: some View {
         NavigationView{
             List(movieList ){movie in
-                NavigationLink(destination: MovieDetail()){MovieRow(movie: movie)}
+                NavigationLink(destination: MovieDetail(movie: movie)){MovieRow(movie: movie)}
                 
             }
             .navigationBarTitle(Text("Movies"))

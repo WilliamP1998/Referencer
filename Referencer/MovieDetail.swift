@@ -12,16 +12,17 @@ import SwiftUI
 struct MovieDetail: View {
     
 
+    var movie:Movie
 
     var body: some View {
         VStack(alignment: .leading){
-            VStack(alignment: .center){Image("Joker")}
+            VStack(alignment: .center){Image(movie.imageName)}
             HStack{
             Text("Title:")
                 .font(.body)
                 .fontWeight(.bold)
                 .shadow(radius: 10)
-                Text("Title")
+                Text(movie.title)
                 .font(.body)
                 .shadow(radius: 10)
             }
@@ -30,7 +31,7 @@ struct MovieDetail: View {
             .font(.body)
             .fontWeight(.bold)
             .shadow(radius: 10)
-                Text("asdasd")
+                Text(movie.director)
                 .font(.body)
                 .shadow(radius: 10)
             }
@@ -39,7 +40,7 @@ struct MovieDetail: View {
                        .font(.body)
                        .fontWeight(.bold)
                        .shadow(radius: 10)
-                Text("\(2019)")
+                Text("\(movie.yearProduced)")
                 .font(.body)
                 .shadow(radius: 10)
             }
@@ -49,6 +50,6 @@ struct MovieDetail: View {
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail()
+        MovieDetail(movie: Movie(id: 1,title: "Title", director: "Director", yearProduced: 2000, imageName: "Joker"))
     }
 }
