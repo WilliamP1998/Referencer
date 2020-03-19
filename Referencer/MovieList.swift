@@ -13,9 +13,14 @@ import SwiftUI
 struct MovieList: View {
     var movieList: [Movie]
     var body: some View {
-        List(movieList ,id:\.id){movie in
-            MovieRow(movie: movie)
-        }    }
+        NavigationView{
+            List(movieList ){movie in
+                NavigationLink(destination: MovieDetail()){MovieRow(movie: movie)}
+                
+            }
+            .navigationBarTitle(Text("Movies"))
+        }
+}
     
 }
 

@@ -9,7 +9,7 @@
 import SwiftUI
 import CoreLocation
 
-struct Movie: Hashable, Codable {
+struct Movie: Hashable, Codable, Identifiable {
     var id: Int
     var title: String
     var director: String
