@@ -11,14 +11,16 @@ import Foundation
 import SwiftUI
 
 struct MovieList: View {
-    var movieList: [Movie]
+    var movieList: [Movie] //List of the movie got from scene delegate
     var body: some View {
         NavigationView{
+            //put the list of movie in list view
             List(movieList ){movie in
-                NavigationLink(destination: MovieDetail(movie: movie)){MovieRow(movie: movie)}
+                //naviagate user to the movie detail page with the data of that movie
                 
+                NavigationLink(destination: MovieDetail(movie: movie)){MovieRow(movie: movie)}
             }
-            .navigationBarTitle(Text("Movies"))
+            .navigationBarTitle(Text("Movies")) //Title of the list page
         }
 }
     

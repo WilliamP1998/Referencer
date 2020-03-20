@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
+    //list of the movies data
     let movieData: [Movie] = [Movie(id:1,title: "Joker", director: "Todd Phillip", yearProduced: 2019, imageName: "Joker"),Movie(id:2, title: "Sherlock Holmes", director: "Guy Ritchy", yearProduced: 2005, imageName: "Sherlock"),Movie(id:3, title: "Parasite", director: "Gisaengchung", yearProduced: 2019, imageName: "Parasite")]
 
 

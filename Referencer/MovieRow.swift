@@ -9,12 +9,13 @@ struct MovieRow: View {
 
     var body: some View {
         HStack {
-                   Image(movie.imageName)
-                       .resizable()
-                       .frame(width: 50, height: 50)
-                   VStack{Text(movie.title)}
+            //Row contain information: image, title
+            VStack{Image(movie.imageName) .resizable()
+                                  .frame(width: 50, height: 50)}
+            
+            VStack{Text(movie.title)}
                    
-                   Spacer()
+            Spacer()
                   
                }
     }

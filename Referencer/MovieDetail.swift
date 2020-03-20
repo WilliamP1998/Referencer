@@ -15,9 +15,12 @@ struct MovieDetail: View {
     var movie:Movie
 
     var body: some View {
-        VStack(alignment: .leading){
+        ScrollView{//make the page scrolabe
+            VStack(alignment: .leading){
             VStack(alignment: .center){Image(movie.imageName)}
+                //image of the movie
             HStack{
+                //title of the movie
             Text("Title:")
                 .font(.body)
                 .fontWeight(.bold)
@@ -27,6 +30,7 @@ struct MovieDetail: View {
                 .shadow(radius: 10)
             }
             HStack{
+                //person who direct the movie
            Text("Director:")
             .font(.body)
             .fontWeight(.bold)
@@ -36,6 +40,7 @@ struct MovieDetail: View {
                 .shadow(radius: 10)
             }
             HStack{
+                //year the movie got produced
              Text("Year Produced:")
                        .font(.body)
                        .fontWeight(.bold)
@@ -45,7 +50,7 @@ struct MovieDetail: View {
                 .shadow(radius: 10)
             }
            
-        }}
+            }}}
 }
 
 struct MovieDetail_Previews: PreviewProvider {
